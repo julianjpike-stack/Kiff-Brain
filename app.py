@@ -14,7 +14,7 @@ CACHE_FOLDER.mkdir(exist_ok=True)
 
 print("Loading TRIBE v2 model...")
 model = TribeModel.from_pretrained(
-    "facebook/tribev2",
+    "facebook/tribev2".replace("\\", "/"),
     cache_folder=CACHE_FOLDER,
 )
 plotter = PlotBrain(mesh="fsaverage5")

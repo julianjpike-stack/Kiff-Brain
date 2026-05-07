@@ -26,5 +26,5 @@ cd Kiff-Brain
 
 ## Getting Updates
 
-Open a terminal in the Kiff-Brain folder and run:D
+Open a terminal in the Kiff-Brain folder and run:
 git pull

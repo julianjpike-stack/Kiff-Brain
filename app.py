@@ -13,8 +13,10 @@ CACHE_FOLDER = Path("./cache")
 CACHE_FOLDER.mkdir(exist_ok=True)
 
 print("Loading TRIBE v2 model...")
+import os
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 model = TribeModel.from_pretrained(
-    "facebook/tribev2".replace("\\", "/"),
+    "facebook" + "/" + "tribev2",
     cache_folder=CACHE_FOLDER,
 )
 plotter = PlotBrain(mesh="fsaverage5")

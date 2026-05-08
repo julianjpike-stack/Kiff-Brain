@@ -1,3 +1,5 @@
+import pathlib
+pathlib.PosixPath = pathlib.WindowsPath
 import gradio as gr
 import shutil
 import numpy as np

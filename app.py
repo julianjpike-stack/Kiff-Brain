@@ -68,7 +68,7 @@ with gr.Blocks(title="Kiff Brain — TRIBE v2") as app:
                 file_types=[".png", ".jpg", ".jpeg", ".mp4"]
             )
             n_seconds = gr.Slider(5, 30, value=10, step=1, label="Seconds per image (images only)")
-            n_timesteps = gr.Slider(5, 30, value=15, step=1, label="Timesteps to visualize")
+            n_timesteps = gr.Slider(5, 300, value=15, step=1, label="Timesteps to visualize")
             run_btn = gr.Button("Run Prediction", variant="primary")
 
         with gr.Column():
